@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "62",
+      "title": "3",
+      "category": "Web",
+      "status": "WIP",
+      "company": "EMS",
+      "contact": "John",
+      "startDate": "2024-01-15",
+      "estimatedFinishDate": "2024-12-31",
+      "description": "Test Project",
+      "projectManager": "Manager",
+      "general": "Yes",
+      "creationDate": "2024-01-01T10:00:00Z",
+      "modifiedDate": "2024-01-15T14:30:00Z"
+    },
+    {
+      "title": "diya",
+      "category": "Web",
+      "status": "WIP",
+      "company": "EMS",
+      "contact": "John",
+      "startDate": "2026-04-21",
+      "estimatedFinishDate": "",
+      "description": "completed",
+      "projectManager": "safa",
+      "general": "Yes",
+      "modifiedDate": "2026-04-28T14:48:29.749Z",
+      "creationDate": "2026-04-28T14:48:29.761Z",
+      "id": "a1VHO59gzA4"
+    },
+    {
+      "title": "sita",
+      "category": "",
+      "status": "",
+      "company": "",
+      "contact": "",
+      "startDate": "",
+      "estimatedFinishDate": "",
+      "description": "",
+      "projectManager": "",
+      "general": "Yes",
+      "modifiedDate": "2026-04-28T15:26:19.379Z",
+      "creationDate": "2026-04-28T15:26:19.380Z",
+      "id": "Nd3o7gnBjso"
+    },
+    {
+      "title": "laya",
+      "category": "Web Development",
+      "status": "Completed",
+      "company": "EMS",
+      "contact": "John Doe",
+      "startDate": "2026-04-23",
+      "estimatedFinishDate": "2026-04-27",
+      "description": "good",
+      "projectManager": "sasa",
+      "general": "No",
+      "code": "",
+      "creationDate": "29/04/2026, 22:23:51",
+      "modifiedDate": "29/04/2026, 22:23:51",
+      "createdBy": "CurrentUser",
+      "modifiedBy": "CurrentUser",
+      "id": "5Yf4l7_ZcUw"
+    },
+    {
+      "title": "united tec",
+      "id": "cON4Q-b_HXw",
+      "category": "Mobile App",
+      "company": "EMS",
+      "description": "completed successfully",
+      "estimatedFinishDate": "2026-04-28",
+      "startDate": "2026-04-18",
+      "projectManager": "Anu",
+      "general": "Yes",
+      "modifiedDate": "30/04/2026, 12:20:52",
+      "modifiedBy": "CurrentUser"
+    },
+    {
+      "title": "techno",
+      "id": "yMdN3dHknOM",
+      "category": "Design",
+      "modifiedDate": "30/04/2026, 12:21:58",
+      "modifiedBy": "CurrentUser"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
