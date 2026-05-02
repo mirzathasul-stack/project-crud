@@ -9,7 +9,7 @@ export default function ProjectList() {
   const nav = useNavigate();
 
   useEffect(() => {
-    axios.get('https://69f34385bd2396bf530fa39b.mockapi.io/projects')
+    axios.get(`https://69f34385bd2396bf530fa39b.mockapi.io/projects`)
       .then(r => setProjects(r.data));
   }, []);
 

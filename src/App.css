@@ -5,4 +5,40 @@ input:focus, select:focus { border-color: #1976d2 !important; }
 button { font-family: inherit; transition: all 0.2s; }
 button:hover { opacity: 0.9; }
 input[type="radio"] { width: 16px; height: 16px; cursor: pointer; accent-color: #1976d2; }
-input[type="date"]::-webkit-calendar-picker-indicator { cursor: pointer; }
+
+/* Tabs Style */
+.tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.tabs button.active {
+  color: #3b82f6;
+  border-bottom: 3px solid #3b82f6;
+  margin-bottom: -2px;
+}
+
+.tabs button:hover {
+  background: #f8fafc;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}

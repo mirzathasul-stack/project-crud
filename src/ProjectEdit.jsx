@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function ProjectEdit() {
+  const[tab, setTab] = useState('analytics')
   const { id } = useParams();
   const nav = useNavigate();
   const [isNew, setIsNew] = useState(true);
@@ -187,11 +188,50 @@ export default function ProjectEdit() {
                 </label>
               </div>
             </div>
+
+</div>  
+
+{/* Tab start */}
+<div className="card" style={{marginTop: '20px'}}>
+  <h4>More Details</h4>
+  
+  {/* Tab Buttons */}
+  <div className="tabs">
+    {['Analytics','Budget Planning','Milestones','Team','Task','Timesheet','Calendar'].map(t => (
+      <button
+        key={t}
+        className={tab === t.toLowerCase().replace(' ','')? 'active' : ''}
+        onClick={() => setTab(t.toLowerCase().replace(' ',''))}
+      >
+        {t}
+      </button>
+    ))}
+  </div>
+
+  {/* Tab Content */}
+  <div style={{padding: '20px', minHeight: '300px'}}>
+    {tab === 'analytics' && (
+      <div>
+        <h5>Employee Statistics</h5>
+        <select><option>Select Employee</option></select>
+      </div>
+    )}
+    {tab === 'budgetplanning' && <div>Budget table displays here</div>}
+    {tab === 'milestones' && <div>Milestones list displays here</div>}
+    {tab === 'team' && <div>Team members displays here</div>}
+    {tab === 'task' && <div>Task list displays here</div>}
+    {tab === 'timesheet' && <div>Timesheet displays here</div>}
+    {tab === 'calendar' && <div>Calendar </div>}
+  </div>
+
+            
             <div style={fieldCol}></div>
             <div style={fieldCol}></div>
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 }
