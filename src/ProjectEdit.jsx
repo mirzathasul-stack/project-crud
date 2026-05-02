@@ -150,11 +150,13 @@ export default function ProjectEdit() {
           <div style={{display: 'flex', gap: 20, marginBottom: 20, flexWrap: 'wrap'}}>
             <div style={fieldCol}>
               <label style={labelStyle}>Contact</label>
-              <select value={form.contact} onChange={e => handleChange('contact', e.target.value)} style={inputStyle}>
-                <option value="">Please Select</option>
-                <option value="John Doe">John Doe</option>
-                <option value="Jane Smith">Jane Smith</option>
-              </select>
+            <input 
+  type="text"
+  value={form.contact} 
+  onChange={e => handleChange('contact', e.target.value)}
+  placeholder="Enter contact name"
+  style={inputStyle}
+/>
             </div>
             <div style={fieldCol}>
               <label style={labelStyle}>Start Date</label>
