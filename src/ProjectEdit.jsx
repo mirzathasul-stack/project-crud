@@ -139,8 +139,9 @@ export default function ProjectEdit() {
               <label style={labelStyle}>Company</label>
               <select value={form.company} onChange={e => handleChange('company', e.target.value)} style={inputStyle}>
                 <option value="">Please Select</option>
-                <option value="EMS">EMS</option>
-                <option value="Pyramid">Pyramid</option>
+                <option value="EMS">EMS Website</option>
+                <option value="Pyramid">Pyramid Admin Modules</option>
+                <option value="Parent">Parent crm</option>
               </select>
             </div>
           </div>
